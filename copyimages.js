@@ -1,17 +1,6 @@
 const fs = require("fs-extra");
 
-/* interface CopyFolderProps {
-  source: string;
-  target: string;
-} */
-
-/*   type CopyFolderProps = {
-    source: string;
-    target: string;
-  } */
-
-async function copyFolder(source: string, target: string) {
-  //async function copyFolder(source, target) {
+async function copyFolder(source, target) {
   try {
     await fs.remove(target);
     await fs.copy(source, target);
