@@ -27,7 +27,7 @@ export default function Header() {
     <div>
       {/* Mobile menu */}
       <header className="bg-white/50 backdrop-blur z-10  sm:hidden">
-        <div className="max-w-5xl pl-5 pr-5 mx-auto flex items-center justify-between">
+        <div className="max-w-5xl  pr-5 mx-auto flex items-center justify-between">
           <Link href="/">
             <img className="w-20 h-20 p-4 " src={Logo.src} alt="logo" />
           </Link>
@@ -63,11 +63,7 @@ export default function Header() {
         >
           <div className="flex items-center align-middle justify-between border-b ">
             <Link href="/" onClick={toggleMobileMenu}>
-              <img
-                className="w-20 h-20 p-4 "
-                src="/uploads/adudev-Logo.png"
-                alt="logo"
-              />
+              <img className="w-20 h-20 p-4 " src={Logo.src} alt="logo" />
             </Link>
             <button
               onClick={toggleMobileMenu}
